@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>University Notice Page</title>
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <style>
+      body{
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .top-bar{
+         background: #000;
+         color: white;
+         padding: 20px;
+      }
+      .container{
+         background: #ffffff;
+         padding: 10px;
+         justify-items: center;
+         align-content: center;
+         height: 400px ;
+      }
+      .heading{
+         text-align: center;
+      }
+      .main{
+         padding: 20px;
+         border-radius: 15px;
+         box-shadow:  0 0 10px  rgb(195, 195, 195) inset;
+      }
+      .no-event{
+         color: red;
+         font-style: italic;
+      }
+      .date-style{
+         color:red;
+         font-weight: bold;
+         font-size: 15px;
+      }
+      .event-card{
+         border: 1px solid;
+         padding: 20px;
+         margin-bottom: 10px;
+         width: 250px;
+         border-radius: 10px;
+      }
+      .delete-btn{
+        color: red;
+      }
+      .delete-btn-box{
+         text-align: center;
+      }
+      .main-title{
+         text-align: center;
+         border-bottom: 1px solid;
+         padding: 10px;
+      }
+   </style>
+</head>
+<body>
+   <div class="top-bar">
+      <h1>Event Notice Page</h1>
+   </div>
+  <div class="container">
+      <div class="main">
+         <div class="heading">
+             <h2>Upcoming Events</h2>
+         </div>
+         <div id="eventsContainer"></div>
+      </div>
+  </div>
+  <script src="scripts/event.js"></script>
+</body>
+</html>

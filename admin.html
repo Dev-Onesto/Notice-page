@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Admin Page</title>
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+   <style>
+      body{
+         margin: 0px;
+         padding: 0px;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      .top-bar{
+         background: #000;
+         color: white;
+         padding: 20px;
+         text-align: center;
+      }
+      .container{
+         background: #ffffff;
+         padding: 10px;
+         justify-items: center;
+         align-content: center;
+      }
+      .main{
+         margin-top: 20px;
+         padding: 20px;
+         border-radius: 15px;
+         box-shadow:  0 0 10px  rgb(195, 195, 195) inset;
+      }
+      .flexed-box{
+         display: flex;
+         gap: 10px;
+         justify-content: space-between;
+      }
+      .submit-box{
+         text-align: center;
+         padding: 5px;
+      }
+      #submit-btn{
+         background: #af0000;
+         color: rgb(255, 255, 255);
+         width: 90px;
+         height: 28px;
+         border: 1px solid;
+      }
+      .event-title{
+         width: 250px;
+         height: 25px;
+         border: 1px solid;
+         border-radius: 5px;
+         padding-left: 5px;
+      }
+      #event-desc{
+         width: 250px;
+         border-radius: 5px;
+         padding-left: 5px;
+      }
+      #event-date{
+         width: 120px;
+         height: 24px;
+         border-radius: 3px;
+         padding-left: 5px;
+         border: 1px solid;
+      }
+      #event-category{
+         width: 120px;
+         height: 25px;
+         border-radius: 3px;
+         border: 1px solid;
+      }
+      label{
+         font-size: 15px;
+      }
+   </style>
+</head>
+<body>
+   <div class="top-bar">
+      <h1>MAU Event Notice Page</h1>
+   </div>
+   <div class="container">
+      <div class="main">
+         <div class="heading">
+            <h1>Add New Event</h1>
+         </div>
+         <form id="event-form">
+            <label for="event-title">Event Title</label><br>
+            <input type="text" class="event-title" placeholder="Event Title" required><br><br>
+
+            <label for="event-desc">Description</label><br>
+            <textarea name="" id="event-desc" required></textarea><br><br>
+
+
+            <div class="flexed-box">
+               <div>
+                   <label for="event-date">Date</label><br>
+                   <input type="date" id="event-date"required><br><br>
+               </div>
+              <div>
+                  <label for="event-category">Category</label><br>
+                  <select name="" id="event-category">
+                     <option value="">- - - - -</option>
+                     <option value="sport">Sport</option>
+                     <option value="club">Club</option>
+                     <option value="seminar">Seminar</option>
+                     <option value="others">others</option>
+                  </select><br><br>
+              </div>
+            </div>
+            <div class="submit-box">
+               <input type="submit" id="submit-btn" value="Add Event">
+            </div>
+         </form>
+         
+      </div>
+      <div class="about">
+         <div class="head">
+            <h3>About</h3>
+         </div>
+         <div class="paragraph">
+            <p></p>
+         </div>
+      </div>
+   </div>
+   <script src="scripts/general.js"></script>
+</body>
+</html>
